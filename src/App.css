@@ -47,8 +47,3 @@
   flex-shrink: 1;
   flex-basis: 280px;
 }
-
-.media {
-  background: black;
-  min-height: 200px;
-}
