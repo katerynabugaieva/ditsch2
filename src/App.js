@@ -2,7 +2,7 @@ import './App.css';
 
 function App() {
   const arr = []
-  for (let i = 1; i < 4; i++) {
+  for (let i = 1; i < 49; i++) {
     arr.push("./img" + i + ".png")
   }
 
