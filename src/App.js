@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const arr = []
+  for (let i = 1; i < 4; i++) {
+    arr.push("./img" + i + ".png")
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src="./img00.png" className="App-logo" alt="logo" />
+      <img src="./img0.png" alt="title" />
+
+      <div className="container1">
+        {arr.map((item, key) => <img src={item} id={key} alt={"дичь" + item} />)}
+      </div>
+
     </div>
   );
 }
